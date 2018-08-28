@@ -1,0 +1,107 @@
+
+body{
+    background-color: #333333;
+}
+.card{
+    position: relative;
+    background-color: #ebecf2;
+    width: 800px;
+    margin: 40px auto;
+    height: 730px;
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    background-color: #479b9d;
+    color: #fff;
+    line-height: 1px;
+    font-family: 'Baloo', cursive;
+}
+#name-1{
+    margin-left: 20px;   
+    font-size: 30px;
+}
+#job{
+    margin-left: 30px;
+    font-size: 14px;
+}
+.header>img{
+    position: absolute;
+    left: 570px;
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #8a1444;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 570;
+    color: #fff;
+    font-family: 'Baloo', cursive;
+}
+.h4{
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+h4{
+    margin-left: 8px;
+}
+.content > .content-left{
+    top: 20px;
+    position: absolute;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 14px;
+    background-color: #8a1444;
+    left: 10px;
+    width: 320px;
+    height: 93%;
+}
+.info{
+    line-height: 20px;
+    line-height: 20px;
+    top: 10px;
+    position: relative;
+    letter-spacing: 1px;
+}
+.info1{
+    position: absolute;
+    left: 15px;
+}
+.info2{
+    position: absolute;
+    left: 100px;
+}
+.info3{
+    line-height: 20px;
+    top: 160px;
+    position: relative;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.info4{
+    line-height: 20px;
+    top: 300px;
+    position: relative;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.content > .content-right{
+    top: 20px;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    left: 350px;
+    background-color: #8a1444;
+    width: 440px;
+    height: 93%;
+}

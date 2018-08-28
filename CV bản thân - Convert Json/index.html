@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Cabin+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="./app.css">
+        <script type="text/javascript" src="./text.json"></script> 
+    </head>
+    <body>
+        <div class="card">
+            <div class="header">
+                <div>
+                    <h3 id="name-1">HỌ VÀ TÊN: LÊ XUÂN SỰ</h3>
+                    <span id="job">ỨNG TUYỂN VỊ TRÍ FRONT-END</span>
+                </div>
+                <img src="./assets/img/user.jpg"/>
+            </div>  
+            <div class="content">
+                <div class="content-left">
+                    <div class="info">
+                        <div class="h4">
+                            <img src="./assets/icons/user.svg" alt="">
+                            <h4>THÔNG TIN LIÊN HỆ</h4>
+                        </div>
+                        <div class="info1">
+                            <span>Họ tên:</span><br>
+                            <span>Ngày sinh:</span><br>
+                            <span>Giới tính:</span><br>
+                            <span>Điện thoại:</span><br>
+                            <span>Gmail:</span><br>
+                            <span>Địa chỉ:</span>
+                        </div>
+                
+                        <div class="info2">
+                            <span id="name"></span><br>
+                            <span id="age"></span><br>
+                            <span id="gender"></span><br>
+                            <span id="phone"></span><br>
+                            <span id="email"></span><br>
+                            <span id="adress"></span>
+                        </div>
+                        <script>
+                            //var text = '{"name":"Lê Xuân Sự", "age":"02/07/1995","gender":"Nam","phone":"09682778459", "email":"lexuansu246@gmail.com","adress":"290 Kim Mã, Ba Đình, Hà Nội"}'
+                            var obj = JSON.parse(text);
+                            // document.getElementById("name").innerHTML = obj[0].name;
+                            // document.getElementById("age").innerHTML = obj[0].age;
+                            // document.getElementById("gender").innerHTML = obj[0].gender;
+                            // document.getElementById("phone").innerHTML = obj[0].phone;
+                            // document.getElementById("email").innerHTML = obj[0].email;
+                            // document.getElementById("adress").innerHTML = obj[0].adress;
+
+                            // localStorage.setItem("name",obj[0].name);
+                            // localStorage.setItem("age",obj[0].age);
+                            // localStorage.setItem("gender",obj[0].gender);
+                            // localStorage.setItem("phone",obj[0].phone);
+                            // localStorage.setItem("email",obj[0].email);
+                            // localStorage.setItem("adress",obj[0].adress);
+
+                            localStorage.setItem("object",obj);
+                            var stringj = JSON.stringify(obj);
+
+                            localStorage.setItem("ao",stringj);
+                            var a = localStorage.getItem("ao");
+                            var obj1 = JSON.parse(a);
+
+                            document.getElementById("name").innerHTML = obj1[0].name;
+                            document.getElementById("age").innerHTML = obj1[0].age;
+                            document.getElementById("gender").innerHTML = obj1[0].gender;
+                            document.getElementById("phone").innerHTML = obj1[0].phone;
+                            document.getElementById("email").innerHTML = obj1[0].email;
+                            document.getElementById("adress").innerHTML = obj1[0].adress;
+                            
+                        </script>
+                    </div>
+                    <div class="info3">
+                            <div class="h4">
+                                    <img src="./assets/icons/target.svg" alt="">
+                                    <h4>MỤC TIÊU NGHỀ NGHIỆP</h4>
+                            </div>
+                            <div class="info1">
+                                <span>Áp dụng những kinh nghiệm, kỹ năng tại</span><br>
+                                <span>trường học và công ty Securitybox và sự</span><br>
+                                <span>hiểu biết của bản thân về job front-end.</span><br>
+                                <span>Từ đó có thể giúp công ty xử lý các công</span><br>
+                                <span>việc về vị trí front-end, đẩy nhanh hơn </span><br>
+                                <span>tiến độ các dự án của khách hàng.</span>
+                            </div>
+                    </div>
+                    <div class="info4">
+                            <div class="h4">
+                                <img src="./assets/icons/skills.svg" alt="">
+                                <h4>KỸ NĂNG</h4>
+                            </div>
+                            <div class="info1">
+                                <span>Photoshop: Level: 1 ( Tự tìm hiểu)</span><br>
+                                <span>Tin học văn phòng: Level 1</span><br>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-right">
+                        <div  class="info">
+                                <div class="h4">
+                                    <img src="./assets/icons/book.svg" alt="">
+                                    <h4>HỌC VẤN</h4>
+                                </div>
+                            <div class="info1">
+                                <span>Tốt nghiệp trung tâm đào tạo Aprotrain-Aptech</span><br>
+                                <span>Lập trình viên quốc tế ACCP i-13</span><br>
+                                <span>Trình độ tiếng anh: TOEIC 450</span><br>
+                            </div>
+                        </div>
+                        <div class="info3">
+                                <div class="h4">
+                                    <img src="./assets/icons/biology.svg" alt="">
+                                    <h4>KINH NGHIỆM</h4>
+                                </div>
+                                <div class="info1">
+                                    <span>Đã có 3 Project Web PHP tự làm và đã chạy</span><br>
+                                    <span>thực tế 1 Web.</span><br>
+                                    <span>Thực tập tại công ty Securitybox 6 tháng</span><br>
+                                    <span>mảng Front-End</span><br>
+                                </div>
+                        </div>
+                        <div class="info4">
+                                <div class="h4">
+                                    <img src="./assets/icons/info.svg" alt="">
+                                    <h4>THÔNG TIN KHÁC</h4>
+                                </div>
+                                <div class="info1">
+                                    <span>Sở thích: Bóng đá, bóng bàn, chơi game, nghe nhạc...</span><br>
+                                </div>
+                                <p id="demo"></p>
+                            </div>
+                </div>
+            </div>  
+        </div> 
+    </body>
+</html>
